@@ -7,23 +7,28 @@
     dark
     app
   >
-    <v-btn value="turnOn">
-      <span>Acender</span>
-
-      <v-icon>mdi-lightbulb-on</v-icon>
-    </v-btn>
-
-    <v-btn value="textOn">
-      <span>Texto</span>
-
-      <v-icon>mdi-format-textbox</v-icon>
-    </v-btn>
-
-    <v-btn value="about">
-      <span>Sobre</span>
-
-      <v-icon>mdi-alert-circle-outline</v-icon>
-    </v-btn>
+    <div class="mt-3">
+      <v-row>
+        <v-col cols="4">
+          <v-btn text value="turnOn">
+            <span>Acender</span>
+            <v-icon>mdi-lightbulb-on</v-icon>
+          </v-btn>
+        </v-col>
+        <v-col cols="4">
+          <v-btn text value="textOn">
+            <span>Texto</span>
+            <v-icon>mdi-format-textbox</v-icon>
+          </v-btn>
+        </v-col>
+        <v-col cols="4">
+          <v-btn text value="about">
+            <span>Sobre</span>
+            <v-icon>mdi-alert-circle-outline</v-icon>
+          </v-btn>
+        </v-col>
+      </v-row>
+    </div>
   </v-bottom-navigation>
 </template>
 
