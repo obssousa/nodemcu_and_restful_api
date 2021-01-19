@@ -1,15 +1,11 @@
 <template>
   <div class="home">
-    Avour
+    TextOn
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
-  name: 'About',
-  components: {
-  }
+  name: 'TextToTurnOn'
 }
 </script>
