@@ -65,7 +65,34 @@ export default {
   }),
   methods: {
     turnOn (value) {
-      console.log(value)
+      const key = '$2b$10$LibHW7q/8ZUp2jmyJIKJ2ef7nPkawX6rOqR1pTjamZ9Kz2qR1GrZa'
+      const bin = '60089a11bca934583e3f8cce'
+      this.$axios.put('https://api.jsonbin.io/v3/b/' + bin, {
+        last: value
+      },
+      {
+        headers: {
+          'X-Master-Key': key,
+          'X-Bin-Versioning': false
+        }
+      })
+        .then(function (response) {
+          console.log(response)
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
+      // this.$axios.get('https://api.jsonbin.io/b/' + bin, {
+      //   headers: {
+      //     'secret-key': key
+      //   }
+      // })
+      //   .then(function (response) {
+      //     console.log(response)
+      //   })
+      //   .catch(function (error) {
+      //     console.log(error)
+      //   })
     }
   }
 }

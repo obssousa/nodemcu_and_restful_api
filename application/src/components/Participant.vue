@@ -11,10 +11,9 @@
           </div>
         </v-list-item-subtitle>
       </v-list-item-content>
-
-      <v-list-item-avatar tile size="80" color="grey">
-        <v-img :src="require('@/assets/' + participant.img)"></v-img>
-      </v-list-item-avatar>
+      <v-avatar color="primary" size="80"
+        ><v-img :src="require('@/assets/' + participant.img)"></v-img
+      ></v-avatar>
     </v-list-item>
 
     <v-card-actions>

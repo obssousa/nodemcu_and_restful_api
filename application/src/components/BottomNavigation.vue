@@ -17,7 +17,7 @@
         </v-col>
         <v-col cols="4">
           <v-btn text value="textOn">
-            <span>Texto</span>
+            <span>Contar</span>
             <v-icon>mdi-format-textbox</v-icon>
           </v-btn>
         </v-col>
